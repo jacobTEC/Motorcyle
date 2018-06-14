@@ -59,7 +59,7 @@ namespace Motorcycle
             Console.WriteLine("Angiv rpm. (må ikke være under 1000 eller over 8000)");
             _Rpm = int.Parse(Console.ReadLine());
 
-            if (_Rpm >= 8001 && _Rpm <= 999)
+            if (_Rpm >= 8001 || _Rpm <= 999)
             {
                 Console.WriteLine("Rpm går over eller under grænsen");
                 _Rpm = 1000;
