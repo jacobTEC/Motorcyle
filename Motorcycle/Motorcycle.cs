@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Motorcycle
 {
-    class Cycle
+    class Motorcycle : ICycle
     {
         private bool _Started;
         private int _Rpm;
@@ -14,7 +14,7 @@ namespace Motorcycle
         private string _Name;
         private double _Speed;
 
-        public Cycle()
+        public Motorcycle()
         {
             _Started = false;
             _Rpm = 0;
@@ -22,7 +22,7 @@ namespace Motorcycle
             _Name = "";
         }
 
-        public Cycle(string name, bool started)
+        public Motorcycle(string name, bool started)
         {
             if (started == true)
             {
